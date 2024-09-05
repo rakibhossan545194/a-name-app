@@ -11,7 +11,11 @@ class _DetailsScreenState extends State<DetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Details Screen'),
+        centerTitle: true,
+        backgroundColor: Colors.cyan,
+      ),
     );
   }
 }
