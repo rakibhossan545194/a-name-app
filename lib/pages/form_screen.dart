@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:j/logout.dart';
 import 'package:j/pages/details_screen.dart';
+import 'package:j/pages/drawer.dart';
 
 class FormScreen extends StatefulWidget {
   const FormScreen({super.key});
@@ -17,21 +19,9 @@ class _FormScreenState extends State<FormScreen> {
         centerTitle: true,
         backgroundColor: Colors.lightGreen,
       ),
-      body: Center(
-        child: ElevatedButton(
-            onPressed: (){
-              Navigator.push(
-                  context, MaterialPageRoute(
-                  builder: (context){
-                    return DetailsScreen();
-                  }
-              ),
-              );
-            },
-            child: Text('Form Screen'),
-        ),
-      ),
-
+      drawer: drawer(),
     );
   }
 }
+
+

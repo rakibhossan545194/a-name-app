@@ -8,9 +8,15 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List<String> products = ["Mobile","Fun","Laptop", "Chair","Microphone"];
-  List<String> productsDetails = ["Samsung Mobile Phone","Brb Fan", "Mac Book", "Office Chair","Boya mircro phone"];
-  List<String> productsPrice = ["10000","4500","120000","1200","2000"];
+  List<String> products = ["Mobile", "Fun", "Laptop", "Chair", "Microphone"];
+  List<String> productsDetails = [
+    "Samsung Mobile Phone",
+    "Brb Fan",
+    "Mac Book",
+    "Office Chair",
+    "Boya mircro phone"
+  ];
+  List<String> productsPrice = ["10000", "4500", "120000", "1200", "2000"];
 
   @override
   Widget build(BuildContext context) {
@@ -22,17 +28,13 @@ class _HomeState extends State<Home> {
         elevation: 5,
         title: Text('I am Rakib'),
         backgroundColor: Colors.deepOrange,
-
         centerTitle: true,
-
-
-
       ),
       body: ListView.builder(
         itemCount: products.length,
-        itemBuilder: (context, index){
+        itemBuilder: (context, index) {
           return ListTile(
-            onTap: (){},
+            onTap: () {},
             title: Text(products[index]),
             leading: Text(products[index][0]),
             trailing: Text(productsPrice[index]),
@@ -40,11 +42,6 @@ class _HomeState extends State<Home> {
           );
         },
       ),
-
-
-
-
     );
   }
 }
-

@@ -13,7 +13,7 @@ class _LogoutState extends State<Logout> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Logout'),
+        title: Text('Logout Screen'),
         backgroundColor: Colors.blue,
       ),
     );
