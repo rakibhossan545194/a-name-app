@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:j/pages/form_screen.dart';
 import 'package:j/pages/home.dart';
+import 'package:j/pages/login.dart';
+
+import 'pages/regsiter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,11 +12,17 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       debugShowCheckedModeBanner: false,
+      initialRoute: 'login',
+      routes: {
+        'register': (context) => MyRegister(),
+        'login': (context) => MyLogin(),
+      },
       title: 'Flutter Demo',
       theme: ThemeData(
         useMaterial3: true,

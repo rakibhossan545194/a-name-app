@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:j/pages/login.dart';
 
 class Logout extends StatefulWidget {
   const Logout({super.key});
@@ -16,6 +17,23 @@ class _LogoutState extends State<Logout> {
         title: Text('Logout Screen'),
         backgroundColor: Colors.blue,
       ),
+      body: Center(
+        child: ElevatedButton(
+            onPressed: (){
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context){
+                        return MyLogin();
+                      }
+                  ),
+              );
+            },
+            child: Text('Logout'),
+        ),
+      ),
+
+
     );
   }
 }

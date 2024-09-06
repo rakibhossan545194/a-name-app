@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:j/logout.dart';
+import 'package:j/message_screen.dart';
+import 'package:j/pages/shop_screen.dart';
 
 class drawer extends StatelessWidget {
   const drawer({
@@ -33,9 +35,11 @@ class drawer extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: ListTile(
-              onTap: () {},
-              title: Text('Home'),
-              leading: Icon(Icons.home),
+              onTap: () {
+
+              },
+              title: Text('Message'),
+              leading: Icon(Icons.message_outlined),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
               textColor: Colors.black,
               tileColor: Colors.lightGreen,
@@ -76,7 +80,9 @@ class drawer extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: ListTile(
-              onTap: () {},
+              onTap: () {
+
+              },
               title: Text('Shop'),
               leading: Icon(Icons.shop),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
