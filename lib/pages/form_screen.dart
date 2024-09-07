@@ -13,30 +13,22 @@ class FormScreen extends StatefulWidget {
 class _FormScreenState extends State<FormScreen> {
   int _selectedIndex = 0;
   final List<Widget> _views = <Widget>[
-     Container(
-       decoration: BoxDecoration(
-         image: DecorationImage(
-             image: NetworkImage('https://static.vecteezy.com/system/resources/thumbnails/001/849/553/small_2x/modern-gold-background-free-vector.jpg'),
-           fit: BoxFit.cover,
-         ),
-
-       ),
-     ),
-    Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-            image: NetworkImage('https://static.vecteezy.com/system/resources/thumbnails/008/014/115/small_2x/tropical-leaves-background-design-summer-leaves-flat-illustration-simple-banner-with-copy-space-free-vector.jpg'),
-          fit: BoxFit.cover,
-        ),
+    const Center(
+      child: Image(
+        image: NetworkImage(
+            'https://www.shutterstock.com/image-photo/back-view-unrecognizable-solitary-hiker-260nw-2460279067.jpg'),
       ),
     ),
-    Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-            image: NetworkImage('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg'),
-          fit: BoxFit.cover,
-        ),
-
+    const Center(
+      child: Image(
+        image: NetworkImage(
+            'https://t4.ftcdn.net/jpg/07/36/82/89/360_F_736828938_FqSfw9ZzpzOi1uaCeYD80UMRcdJ0bAaF.jpg'),
+      ),
+    ),
+    const Center(
+      child: Image(
+        image: NetworkImage(
+            'https://t4.ftcdn.net/jpg/07/36/82/89/360_F_736828938_FqSfw9ZzpzOi1uaCeYD80UMRcdJ0bAaF.jpg'),
       ),
     ),
   ];
